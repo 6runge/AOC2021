@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "tEdEK5T4dnnpQx9FUBpHXvJj1vPGtyoV9IxY6dFIJz/Y4ypXJIYR+BowEIiAcuHrUpi0HPmQiI+5+i/O0lplzw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\WPS\\Projekte\\AOC\\AOC2021\\AOC2021\\AOC2021.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\WPS\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.22\\microsoft.netcore.app.host.win-x64.3.1.22.nupkg.sha512"
+  ],
+  "logs": []
+}
