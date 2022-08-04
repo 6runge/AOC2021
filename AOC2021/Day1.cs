@@ -21,7 +21,19 @@
 
         public int Puzzle2()
         {
-            return -1;
+            string[] input = System.IO.File.ReadAllLines(@"..\..\..\input\1-2.txt");
+            int increases = 0;
+            for (int i = 0; i < input.Length - 3; i++)
+            {
+                int currentWindow = int.Parse(input[i]) + int.Parse(input[i + 1]) + int.Parse(input[i + 2]);
+                int nextWindow = int.Parse(input[i+1]) + int.Parse(input[i + 2]) + int.Parse(input[i + 3]);
+
+                if(nextWindow > currentWindow)
+                {
+                    increases++;
+                }
+            }
+            return increases;
         }
     }
 }
