@@ -33,7 +33,29 @@ namespace AOC2021
 
         public int Puzzle2()
         {
-            throw new NotImplementedException();
+            string[] input = System.IO.File.ReadAllLines(@"..\..\..\input\2-2.txt");
+            int horizontalPosition = 0;
+            int depth = 0;
+            int aim = 0;
+
+            foreach (string line in input)
+            {
+                string[] command = line.Split(' ');
+                switch (command[0])
+                {
+                    case "forward":
+                        horizontalPosition += int.Parse(command[1]);
+                        depth += aim * int.Parse(command[1]);
+                        break;
+                    case "down":
+                        aim += int.Parse(command[1]);
+                        break;
+                    case "up":
+                        aim -= int.Parse(command[1]);
+                        break;
+                }
+            }
+            return depth * horizontalPosition;
         }
     }
 }
