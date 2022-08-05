@@ -6,7 +6,8 @@ namespace AOC2021
     {
         private static IAOCDay[] _solvers = new IAOCDay[]
             {
-                new Day1()
+                new Day1(),
+                new Day2()
             };
 
         static void Main(string[] args)
